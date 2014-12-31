@@ -1,0 +1,34 @@
+{
+  "name": "mongoose-lean",
+  "version": "1.0.0",
+  "description": "Default Mongoose to use lean queries.  Fatten them back up with syntactic sugar.",
+  "author": "Good Eggs <open-source@goodeggs.com>",
+  "contributors": [
+    "Bob <bob@zoller.us>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "mongoose mongo lean fat"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goodeggs/mongoose-lean.git"
+  },
+  "homepage": "https://github.com/goodeggs/mongoose-lean",
+  "bugs": "https://github.com/goodeggs/mongoose-lean/issues",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "mocha": "^1.2.15",
+    "mongoose": "^3.8.18",
+    "chai": "^1.10.0",
+    "async": "^0.9.0"
+  },
+  "scripts": {
+    "compile": "coffee --bare --compile --output lib/ src/",
+    "prepublish": "npm run compile",
+    "pretest": "npm run compile",
+    "test": "mocha"
+  }
+}
